@@ -10,9 +10,10 @@ interface FloatingToolbarProps {
   chapter: Chapter;
   unit: Unit;
   content: ContentSection[];
+  onAddDownload: (chapter: Chapter, unit: Unit) => void;
 }
 
-const FloatingToolbar: React.FC<FloatingToolbarProps> = ({ chapter, unit, content }) => {
+const FloatingToolbar: React.FC<FloatingToolbarProps> = ({ chapter, unit, content, onAddDownload }) => {
   const [showCopied, setShowCopied] = useState(false);
   const [isDownloading, setIsDownloading] = useState(false);
 
@@ -89,6 +90,7 @@ const FloatingToolbar: React.FC<FloatingToolbarProps> = ({ chapter, unit, conten
       }
       
       pdf.save(`Chapter ${chapter.id} - ${chapter.title}.pdf`);
+      onAddDownload(chapter, unit);
 
     } catch (error) {
         console.error("Failed to generate PDF:", error);

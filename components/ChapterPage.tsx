@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import type { Chapter, ContentSection, Unit } from '../types';
 import BackButton from './BackButton';
+import FloatingToolbar from './FloatingToolbar';
 
 interface ChapterPageProps {
   chapter: Chapter;
@@ -9,9 +10,10 @@ interface ChapterPageProps {
   content: ContentSection[];
   onGoBack: () => void;
   onSelectSection: (section: ContentSection, chapter: Chapter, unit: Unit) => void;
+  onAddDownload: (chapter: Chapter, unit: Unit) => void;
 }
 
-const ChapterPage: React.FC<ChapterPageProps> = ({ chapter, unit, content, onGoBack, onSelectSection }) => {
+const ChapterPage: React.FC<ChapterPageProps> = ({ chapter, unit, content, onGoBack, onSelectSection, onAddDownload }) => {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -60,6 +62,7 @@ const ChapterPage: React.FC<ChapterPageProps> = ({ chapter, unit, content, onGoB
           </motion.button>
         ))}
       </motion.div>
+      <FloatingToolbar chapter={chapter} unit={unit} content={content} onAddDownload={onAddDownload} />
     </div>
   );
 };

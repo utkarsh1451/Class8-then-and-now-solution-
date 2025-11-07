@@ -151,7 +151,7 @@ const App: React.FC = () => {
       case 'unit':
         return <UnitPage unit={view.unit} onSelectChapter={handleSelectChapter} onGoBack={goBack} onAskAi={openAiChat} />;
       case 'chapter':
-        return <ChapterPage chapter={view.chapter} unit={view.unit} content={getChapterContent(view.unit.id, view.chapter.id)} onSelectSection={handleSelectSection} onGoBack={goBack} />;
+        return <ChapterPage chapter={view.chapter} unit={view.unit} content={getChapterContent(view.unit.id, view.chapter.id)} onSelectSection={handleSelectSection} onGoBack={goBack} onAddDownload={handleAddDownload} />;
       case 'section':
         return <SectionPage section={view.section} onGoBack={goBack} />;
       case 'comingSoon':
