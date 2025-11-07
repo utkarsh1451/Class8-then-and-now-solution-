@@ -6,13 +6,13 @@ export const UNITS: Unit[] = [
     title: 'Resources and Development',
     icon: '🗺️',
     chapters: [
-      { id: 1, title: 'Resources', active: true },
-      { id: 2, title: 'Land, Soil and Water Resources', active: false },
-      { id: 3, title: 'Natural Vegetation and Wildlife', active: false },
-      { id: 4, title: 'Mineral and Energy Resources', active: false },
-      { id: 5, title: 'Agriculture', active: false },
-      { id: 6, title: 'Industry', active: false },
-      { id: 7, title: 'Human Resource', active: false },
+      { id: 1, title: 'Resources', active: true, summary: "Learn about what resources are, their types like natural, human-made, and human, and the importance of conserving them for a sustainable future." },
+      { id: 2, title: 'Land, Soil and Water Resources', active: true, summary: "Explore the vital resources of land, soil, and water. Understand land use patterns, soil formation, and methods for conserving these precious resources." },
+      { id: 3, title: 'Natural Vegetation and Wildlife', active: true, summary: "Discover the diverse flora and fauna of our planet. This chapter covers different types of forests, grasslands, and the importance of conserving wildlife." },
+      { id: 4, title: 'Mineral and Energy Resources', active: true, summary: "Delve into the world of minerals and energy. Learn about metallic and non-metallic minerals, and conventional vs. non-conventional energy sources." },
+      { id: 5, title: 'Agriculture', active: true, summary: "Understand the backbone of our economy - agriculture. Explore different types of farming, major crops, and compare agricultural practices in India and the USA." },
+      { id: 6, title: 'Industry', active: false, summary: "" },
+      { id: 7, title: 'Human Resource', active: false, summary: "" },
     ],
   },
   {
@@ -20,19 +20,19 @@ export const UNITS: Unit[] = [
     title: 'Modern Period',
     icon: '🏰',
     chapters: [
-      { id: 1, title: 'Modern India', active: false },
-      { id: 2, title: 'Colonisation of India', active: false },
-      { id: 3, title: "The Company's Civil Administration and Revenue Policy", active: false },
-      { id: 4, title: 'Tribal Resistance', active: false },
-      { id: 5, title: 'The Revolt of 1857', active: false },
-      { id: 6, title: 'Colonialism and Urban Change', active: false },
-      { id: 7, title: 'Crafts and Industries', active: false },
-      { id: 8, title: 'Education and British Rule', active: false },
-      { id: 9, title: 'Women, Caste and Reform', active: false },
-      { id: 10, title: 'Changes in Art and Architecture', active: false },
-      { id: 11, title: 'Rise of Indian Nationalism', active: false },
-      { id: 12, title: 'National Movement – Fulfilment', active: false },
-      { id: 13, title: 'India after Independence', active: false },
+      { id: 1, title: 'Modern India', active: false, summary: "" },
+      { id: 2, title: 'Colonisation of India', active: false, summary: "" },
+      { id: 3, title: "The Company's Civil Administration and Revenue Policy", active: false, summary: "" },
+      { id: 4, title: 'Tribal Resistance', active: false, summary: "" },
+      { id: 5, title: 'The Revolt of 1857', active: false, summary: "" },
+      { id: 6, title: 'Colonialism and Urban Change', active: false, summary: "" },
+      { id: 7, title: 'Crafts and Industries', active: false, summary: "" },
+      { id: 8, title: 'Education and British Rule', active: false, summary: "" },
+      { id: 9, title: 'Women, Caste and Reform', active: false, summary: "" },
+      { id: 10, title: 'Changes in Art and Architecture', active: false, summary: "" },
+      { id: 11, title: 'Rise of Indian Nationalism', active: false, summary: "" },
+      { id: 12, title: 'National Movement – Fulfilment', active: false, summary: "" },
+      { id: 13, title: 'India after Independence', active: false, summary: "" },
     ],
   },
   {
@@ -40,16 +40,16 @@ export const UNITS: Unit[] = [
     title: 'Social and Political Life',
     icon: '⚖️',
     chapters: [
-      { id: 1, title: 'The Indian Constitution', active: false },
-      { id: 2, title: 'Understanding Secularism', active: false },
-      { id: 3, title: 'Our Fundamental Rights and Duties', active: false },
-      { id: 4, title: 'Parliamentary Government: The Union Legislature', active: false },
-      { id: 5, title: 'Parliamentary Government: The Union Executive', active: false },
-      { id: 6, title: 'The Judiciary', active: false },
-      { id: 7, title: 'Role of Police and Courts', active: false },
-      { id: 8, title: 'Marginalised Groups and Social Justice', active: false },
-      { id: 9, title: 'Public Facilities and Social Justice', active: false },
-      { id: 10, title: 'Laws and Public Welfare', active: false },
+      { id: 1, title: 'The Indian Constitution', active: false, summary: "" },
+      { id: 2, title: 'Understanding Secularism', active: false, summary: "" },
+      { id: 3, title: 'Our Fundamental Rights and Duties', active: false, summary: "" },
+      { id: 4, title: 'Parliamentary Government: The Union Legislature', active: false, summary: "" },
+      { id: 5, title: 'Parliamentary Government: The Union Executive', active: false, summary: "" },
+      { id: 6, title: 'The Judiciary', active: false, summary: "" },
+      { id: 7, title: 'Role of Police and Courts', active: false, summary: "" },
+      { id: 8, title: 'Marginalised Groups and Social Justice', active: false, summary: "" },
+      { id: 9, title: 'Public Facilities and Social Justice', active: false, summary: "" },
+      { id: 10, title: 'Laws and Public Welfare', active: false, summary: "" },
     ],
   },
 ];
@@ -142,6 +142,400 @@ export const CHAPTER_1_CONTENT: ContentSection[] = [
             { q: '3. Technology is...', a: '(c) a man-made resource' },
             { q: '4. Which of the following resources is non-renewable but can be recycled?', a: '(d) iron' },
             { q: '5. Sustainable development seeks to prevent...', a: '(d) all of these' },
+        ],
+    },
+];
+
+export const CHAPTER_2_CONTENT: ContentSection[] = [
+    {
+        title: 'A. Oral Questions',
+        questions: [
+            { q: '1. What percentage of the earth\'s surface is made up of land masses?', a: 'About 29% of the earth’s surface is made up of land masses.' },
+            { q: '2. What is silt?', a: 'Fine soil particles carried and deposited by rivers.' },
+            { q: '3. What is humus?', a: 'Humus is the organic matter formed from decayed plants and animals that enriches soil fertility.' },
+            { q: '4. List three factors that affect soil formation.', a: 'Parent rock, climate, and vegetation affect soil formation.' },
+            { q: '5. Mention two things that may trigger mudflows.', a: 'Heavy rainfall and earthquakes can trigger mudflows.' },
+            { q: '6. What are the two ways in which soil gets polluted?', a: 'By use of chemical fertilisers and industrial waste dumping.' },
+            { q: '7. Mention two ways of harvesting rainwater.', a: 'Rooftop rainwater harvesting and building small check dams.' },
+            { q: '8. Name two diseases that spread through contaminated drinking water.', a: 'Cholera and Typhoid.' },
+        ],
+    },
+    {
+        title: 'B. Answer in not more than 20 words',
+        questions: [
+            { q: '1. What is arable land? How much of India\'s land is arable?', a: 'Land suitable for farming is arable land. About 47% of India’s land is arable.' },
+            { q: '2. What is soil profile?', a: 'The vertical section of soil showing different layers is called a soil profile.' },
+            { q: '3. Name any two regions that suffer from water scarcity.', a: 'Rajasthan and Gujarat suffer from water scarcity.' },
+            { q: '4. What is a landslide?', a: 'The sudden downward movement of soil and rock on slopes due to gravity.' },
+            { q: '5. Mention three ways of saving water.', a: 'Rainwater harvesting, drip irrigation, and reuse of water.' },
+        ],
+    },
+    {
+        title: 'C. Answer in not more than 40 words',
+        questions: [
+            { q: '1. Why are well-developed soils found mostly in the low latitudes?', a: 'Warm climate and heavy rainfall in low latitudes help fast weathering of rocks and formation of deep, fertile soils.' },
+            { q: '2. Write briefly about regur soil.', a: 'Regur (black) soil is rich in iron and lime, formed from lava rocks, and ideal for growing cotton in the Deccan Plateau.' },
+            { q: '3. What are multi-purpose river valley projects?', a: 'Projects that serve many uses like irrigation, power generation, flood control, and navigation, e.g., Bhakra Nangal Project.' },
+        ],
+    },
+    {
+        title: 'D. Answer in not more than 100 words',
+        questions: [
+            {
+                q: '1. What do you understand by pattern of land use? Explain with an example why the pattern changes.',
+                a: 'Pattern of land use means how land is used for agriculture, forestry, industry, housing, etc.\nIt changes due to population, technology, economy, and needs of people.\nFor example, more land is now used for housing in urban areas.',
+                isTable: true,
+                table: {
+                    headers: ['Type of Land Use', '% of India’s Land'],
+                    rows: [
+                        ['Forests', '22%'],
+                        ['Agriculture', '47%'],
+                        ['Pastures', '4%'],
+                        ['Non-agricultural use', '9%'],
+                        ['Wasteland', '18%'],
+                    ],
+                },
+            },
+            {
+                q: '2. Briefly describe any three methods of soil conservation.',
+                a: 'a. Contour ploughing: Ploughing along slopes to reduce runoff.\nb. Terrace farming: Making steps on hill slopes to prevent erosion.\nc. Afforestation: Planting trees to hold soil and stop erosion.',
+            },
+            {
+                q: '3. How can we deal with water pollution?',
+                a: 'By treating industrial waste, stopping dumping into rivers, using eco-friendly detergents, and spreading awareness about clean water.',
+            },
+        ],
+    },
+    {
+        title: 'E. Think and Answer',
+        questions: [
+            { q: '1. Explain how eco-friendly methods can control soil pollution.', a: 'Using organic fertilisers, composting, and natural pest control prevents harmful chemicals from entering soil.' },
+            { q: '2. Why are legumes often grown in rotation with other crops?', a: 'Because leguminous plants fix nitrogen in the soil, improving fertility for the next crop.' },
+            { q: '3. Why is irrigation harmful in areas of poor drainage?', a: 'It causes waterlogging and salinisation, damaging soil fertility.' },
+        ],
+    },
+    {
+        title: 'F. Fill in the Blanks',
+        questions: [
+            { q: '1. The black soil of the Deccan Plateau is locally called ____.', a: 'regur' },
+            { q: '2. Iron oxides give ____ soils their colour.', a: 'red' },
+            { q: '3. ____ is the system of cutting steps into slopes.', a: 'Terracing' },
+            { q: '4. Covering ploughed or bare soil is called ____.', a: 'mulching' },
+            { q: '5. ____ are rows of trees that check wind and raindrop impact.', a: 'Shelterbelts' },
+            { q: '6. The accumulation of salts in surface soil is called ____.', a: 'salinisation' },
+            { q: '7. ____ is a plant that filters some toxic industrial wastes.', a: 'Water hyacinth' },
+        ],
+    },
+    {
+        title: 'G. True or False',
+        questions: [
+            { q: '1. The pattern of land use changes with the needs of people.', a: 'True' },
+            { q: '2. Most of the world’s land is arable.', a: 'False' },
+            { q: '3. Soil formation is a very slow process.', a: 'True' },
+            { q: '4. Usually light-coloured rocks produce soils rich in iron compounds.', a: 'False' },
+            { q: '5. Fine soils have low water-holding capacity.', a: 'False' },
+            { q: '6. Afforestation is not effective in checking soil erosion.', a: 'False' },
+            { q: '7. Synthetic fertilisers often contain non-biodegradable chemicals.', a: 'True' },
+        ],
+    },
+    {
+        title: 'H. Choose the Correct Option',
+        questions: [
+            { q: '1. Granitic rocks usually produce', a: '(a) coarse soils\n(b) line soils' },
+            { q: '2. Soil formation usually takes place more rapidly in', a: '(c) moderate climates\n(b) tropical climates' },
+            { q: '3. Of the earth\'s total water resources, the fresh water available for our use is', a: '(d) less than 1%' },
+            { q: '4. Which of the following is not a method of checking soil erosion?', a: '(c) salinisation' },
+            { q: '5. Which of the following help preserve soil fertility?', a: '(a) mulching\n(b) crop rotation\n(c) plugging gullies' },
+        ],
+    },
+];
+
+export const CHAPTER_3_CONTENT: ContentSection[] = [
+    {
+        title: 'A. Oral Questions',
+        questions: [
+            { q: '1. What is meant by biosphere?', a: 'The biosphere is the zone of the earth where life exists — including land, water, and air.' },
+            { q: '2. What is natural vegetation?', a: 'Natural vegetation refers to plants that grow naturally without human interference.' },
+            { q: '3. What is meant by the growing season of a plant?', a: 'The growing season is the period of the year when the temperature and rainfall allow plants to grow.' },
+            { q: '4. What is a terrestrial biome? Give two examples.', a: 'A terrestrial biome is a large land-based ecosystem with similar climate and vegetation.\nExamples: Desert and tropical rainforest.' },
+            { q: '5. What kind of trees are characteristic of the taiga biome?', a: 'Coniferous trees such as pine, spruce, and fir.' },
+            { q: '6. What is meant by wildlife?', a: 'Wildlife refers to animals, birds, and other living creatures that live in their natural habitats.' },
+            { q: '7. The use of which drug on animals killed many vultures in India?', a: 'Diclofenac.' },
+            { q: '8. Name any two biosphere reserves of India.', a: 'Nilgiri Biosphere Reserve and Nanda Devi Biosphere Reserve.' },
+        ],
+    },
+    {
+        title: 'B. Answer in not more than 20 words',
+        questions: [
+            { q: '1. Why do deciduous trees shed their leaves in the dry season?', a: 'To reduce water loss during dry seasons.' },
+            { q: '2. What is a biome?', a: 'A biome is a large natural area with distinct climate, plants, and animals.' },
+            { q: '3. What kind of vegetation is found at the eastern margins of continents in warm temperate regions?', a: 'Temperate evergreen forests.' },
+            { q: '4. What is the aim of CITES?', a: 'To protect endangered plants and animals from international trade.' },
+        ],
+    },
+    {
+        title: 'C. Answer in not more than 40 words',
+        questions: [
+            { q: '1. What causes forest fires?', a: 'Forest fires are caused by natural factors like lightning or by human activities such as careless use of fire.' },
+            { q: '2. What is social forestry?', a: 'Social forestry involves planting trees on community lands to meet local needs and protect the environment.' },
+            { q: '3. What are biosphere reserves?', a: 'Biosphere reserves are protected areas meant for conserving biodiversity and allowing sustainable use of natural resources.' },
+        ],
+    },
+    {
+        title: 'D. Answer in not more than 100 words',
+        questions: [
+            {
+                q: '1. Mention some ways of conserving vegetation and wildlife.',
+                a: 'Vegetation and wildlife can be conserved by:\n\n• Creating national parks and wildlife sanctuaries.\n• Planting more trees and preventing deforestation.\n• Banning hunting and illegal trade of animals.\n• Spreading awareness and following environmental laws.\n\nThese measures help preserve the balance of nature and protect endangered species.',
+            },
+        ],
+    },
+    {
+        title: 'E. Think and Answer',
+        questions: [
+            { q: '1. Why is an ecosystem considered to be a self-supporting system?', a: 'Because plants, animals, and microorganisms depend on each other and their environment for survival.' },
+            { q: '2. Prove with two examples that plants and animals respond to changes in their environment.', a: '(i) Plants shed leaves during dry seasons.\n(ii) Animals migrate or hibernate during extreme weather.' },
+            { q: '3. Why are different types of plants found at different latitudes and altitudes?', a: 'Because temperature, rainfall, and sunlight vary with latitude and altitude.' },
+            { q: '4. Why are firebreaks effective in controlling the spread of fires?', a: 'Firebreaks stop the spread of fire by removing vegetation that could fuel it.' },
+        ],
+    },
+    {
+        title: 'F. Fill in the Blanks',
+        questions: [
+            { q: '1. The two main climatic factors that influence natural vegetation are temperature and ____.', a: 'rainfall' },
+            { q: '2. In tropical regions, deserts are found at the western margins of continents, while deciduous forests are found at the ____ margins.', a: 'eastern' },
+            { q: '3. Lions and zebras are to the African savanna what bison and pronghorns are to the North American ____.', a: 'prairies' },
+            { q: '4. The vulture is a natural ____ which is now endangered in India.', a: 'scavenger' },
+            { q: '5. The full form of CITES is ____.', a: 'Convention on International Trade in Endangered Species of Wild Fauna and Flora.' },
+        ],
+    },
+    {
+        title: 'G. True or False',
+        questions: [
+            { q: '1. Plants and animals are natural resources.', a: 'True' },
+            { q: '2. Severe and lasting changes in the environment may cause some plants and animals to become extinct.', a: 'True' },
+            { q: '3. In arctic regions, trees increase in height as rainfall decreases.', a: 'False' },
+            { q: '4. The length of the growing season of a plant depends on the amount of rainfall.', a: 'True' },
+            { q: '5. A biome may consist of several ecosystems, both terrestrial and aquatic.', a: 'True' },
+            { q: '6. Some animals are bred in captivity to save them from extinction.', a: 'True' },
+        ],
+    },
+    {
+        title: 'H. Choose the Correct Option',
+        questions: [
+            { q: '1. With increasing distance from the equator, the growing season of plants generally', a: '(b) becomes shorter' },
+            { q: '2. In cool temperate regions, temperate deciduous forests are to the western margins of continents what to the eastern margins are', a: '(a) temperate evergreen forests' },
+            { q: '3. What kind of large cat is not found in the wild in Asia?', a: '(c) jaguar' },
+            { q: '4. Which of the following cannot serve as a firebreak?', a: '(c) a shelter belt' },
+            { q: '5. Which of the following cannot reside in a biosphere reserve?', a: '(c) people' },
+            { q: '6. In India, Wildlife Week is observed every year in', a: '(c) October' },
+        ],
+    },
+];
+
+export const CHAPTER_4_CONTENT: ContentSection[] = [
+    {
+        title: 'A. Oral Questions',
+        questions: [
+            { q: '1. What are minerals?', a: 'Naturally occurring substances found in the earth’s crust that have definite chemical composition are called minerals.' },
+            { q: '2. Name two mineral fuels.', a: 'Coal and petroleum.' },
+            { q: '3. What is an alloy? Give two examples.', a: 'A mixture of two or more metals is called an alloy.\nExamples: Brass (copper + zinc), Bronze (copper + tin).' },
+            { q: '4. Name an important centre of gold mining in Australia.', a: 'Kalgoorlie.' },
+            { q: '5. Name two elements from which atomic power is generated.', a: 'Uranium and Thorium.' },
+            { q: '6. Mention two conventional and two non-conventional sources of energy.', a: 'Conventional: Coal, Petroleum.\nNon-conventional: Solar energy, Wind energy.' },
+            { q: '7. Mention one advantage and one disadvantage of solar energy.', a: 'Advantage: It is clean and renewable.\nDisadvantage: It cannot be used at night or during cloudy weather.' },
+            { q: '8. Name one place in India which has scope for utilising tidal energy.', a: 'The Gulf of Kachchh (Gujarat).' },
+        ],
+    },
+    {
+        title: 'B. Answer in not more than 20 words',
+        questions: [
+            { q: '1. What are ores?', a: 'Minerals from which metals can be extracted profitably are called ores.' },
+            { q: '2. Name four important minerals of South America.', a: 'Iron, copper, tin, and bauxite.' },
+            { q: '3. From which ore is aluminium extracted? What are the uses of aluminium?', a: 'Aluminium is extracted from bauxite. It is used in making aircraft, utensils, and electrical cables.' },
+            { q: '4. Why is gold mining expensive in the Kolar region of Karnataka?', a: 'Because gold occurs deep underground and requires costly mining.' },
+            { q: '5. Name the chief petroleum-producing regions of India.', a: 'Assam, Gujarat, and Mumbai High.' },
+            { q: '6. Name two nuclear power plants of India.', a: 'Tarapur (Maharashtra) and Kalpakkam (Tamil Nadu).' },
+            { q: '7. Mention any two advantages of biogas.', a: 'Provides clean energy and reduces household waste.' },
+        ],
+    },
+    {
+        title: 'C. Answer in not more than 40 words',
+        questions: [
+            { q: '1. What are metallic and non-metallic minerals?', a: 'Metallic minerals contain metals and can be melted (e.g., iron, copper).\nNon-metallic minerals do not contain metals (e.g., mica, limestone).' },
+            { q: '2. How is mica useful? Mention where it is found in India.', a: 'Mica is used in electrical and electronic industries as an insulator.\nIt is found in Jharkhand, Bihar, and Andhra Pradesh.' },
+            { q: '3. Which region in India is the richest in coal? Mention three uses of coal.', a: 'Jharkhand is the richest in coal.\nUses:\n\n• Generates electricity\n• Used in steel industries\n• Used as domestic fuel.' },
+            {
+                q: '4. Make a table showing the advantages and disadvantages of hydel power as a source of energy.',
+                isTable: true,
+                table: {
+                    headers: ['Advantages', 'Disadvantages'],
+                    rows: [
+                        ['Renewable source of energy', 'Dams are costly to build'],
+                        ['Pollution-free', 'Displacement of people'],
+                        ['Controls floods', 'Affects aquatic life']
+                    ]
+                },
+                a: '',
+            },
+        ],
+    },
+    {
+        title: 'D. Answer in not more than 100 words',
+        questions: [
+            {
+                q: '1. Give an account of the mineral wealth of North America.',
+                a: 'North America is rich in minerals such as iron, copper, lead, zinc, and coal.\nCanada has large deposits of nickel and uranium.\nThe USA has vast coal, petroleum, and natural gas reserves.\nMexico is known for silver and oil production.\nThese resources have supported industrial growth in the continent.',
+            },
+            {
+                q: '2. Why are petroleum and natural gas popular sources of energy? Mention some of their other uses.',
+                a: 'They are easy to transport, highly efficient, and cleaner than coal.\nPetroleum is used as fuel in vehicles and industries.\nNatural gas is used for cooking and electricity generation.\nThey are also raw materials for plastics, fertilizers, and chemicals.',
+            },
+            {
+                q: '3. Write a note on the conservation of mineral and power resources.',
+                a: 'Minerals are exhaustible and should be conserved by:\n\n• Using substitutes and recycling metals.\n• Reducing wastage during mining.\n• Promoting renewable energy sources like solar and wind power.\n• Encouraging energy-efficient technologies.',
+            },
+        ],
+    },
+    {
+        title: 'E. Think and Answer',
+        questions: [
+            { q: '1. Name a mineral that can be eaten.', a: 'Salt.' },
+            { q: '2. Why do you think plains are composed chiefly of sedimentary rocks?', a: 'Because sediments from rivers get deposited and compacted over time.' },
+            { q: '3. What kind of energy resource is considered to be clean? Give two examples each of energy resources that are clean and those that are not.', a: 'Clean energy resources cause little or no pollution.\nClean: Solar, Wind.\nNot clean: Coal, Petroleum.' },
+        ],
+    },
+    {
+        title: 'F. Fill in the Blanks',
+        questions: [
+            { q: '1. Diamond is the hardest mineral and ____ is the softest.', a: 'talc' },
+            { q: '2. Bronze contains the metals copper and ____.', a: 'tin' },
+            { q: '3. Mineral fuels are found in ____ rocks.', a: 'sedimentary' },
+            { q: '4. Mexico is one of the leading producers of ____.', a: 'silver' },
+            { q: '5. Australia is the largest producer of ____ in the world.', a: 'bauxite' },
+            { q: '6. The Periyar Project benefits the state of ____.', a: 'Tamil Nadu' },
+            { q: '7. The heat stored in the earth’s interior is called ____ energy.', a: 'geothermal' },
+            { q: '8. Biogas is produced from ____ waste.', a: 'organic' },
+            { q: '9. Tamil Nadu and Gujarat are two Indian states where ____ have been set up.', a: 'wind turbines' },
+        ],
+    },
+    {
+        title: 'G. True or False',
+        questions: [
+            { q: '1. Mineral fuels are metallic minerals.', a: 'False' },
+            { q: '2. Metallic minerals are usually found in igneous and metamorphic rocks.', a: 'True' },
+            { q: '3. Brass is an alloy of copper and zinc.', a: 'True' },
+            { q: '4. Antarctica is believed to be rich in minerals.', a: 'True' },
+            { q: '5. Potash, phosphates, and nitrates are minerals commonly used in making fertilisers.', a: 'True' },
+            { q: '6. India has large deposits of silver, lead, zinc, and copper.', a: 'False' },
+            { q: '7. Natural gas is chiefly methane gas.', a: 'True' },
+            { q: '8. All non-conventional sources of energy are inexhaustible.', a: 'False' },
+        ],
+    },
+    {
+        title: 'H. Choose the Correct Option',
+        questions: [
+            { q: '1. Which of the following is a ferrous mineral?', a: '(d) Manganese ore' },
+            { q: '2. Petroleum is extracted by', a: '(a) Drilling' },
+            { q: '3. Which of the following does India import?', a: '(b) Copper' },
+            { q: '4. Which of the following is not a conventional source of power?', a: '(d) Uranium' },
+            { q: '5. The most important coal-producing area in India is', a: '(c) Jharkhand' },
+        ],
+    },
+];
+
+export const CHAPTER_5_CONTENT: ContentSection[] = [
+    {
+        title: 'A. Oral Questions',
+        questions: [
+            { q: '1. What is the chief agricultural activity?', a: 'Cultivation of crops.' },
+            { q: '2. What is apiculture?', a: 'Rearing of honeybees for honey and wax.' },
+            { q: '3. Name two types of subsistence agriculture.', a: 'Intensive subsistence and shifting cultivation.' },
+            { q: '4. Name two types of commercial agriculture.', a: 'Plantation agriculture and commercial grain farming.' },
+            { q: '5. What is market gardening?', a: 'Growing fruits, flowers, and vegetables near urban areas for sale in markets.' },
+            { q: '6. What is dairy farming?', a: 'Rearing of cattle for milk and milk products.' },
+            { q: '7. Which continent is the world\'s largest producer of food?', a: 'Asia.' },
+            { q: '8. What is an agricultural season?', a: 'The period during which certain crops are grown and harvested.' },
+            { q: '9. What kind of crop is jute? Name two jute-growing countries.', a: 'Jute is a fibre crop. It is grown in India and Bangladesh.' },
+        ],
+    },
+    {
+        title: 'B. Answer in not more than 20 words',
+        questions: [
+            { q: '1. What is agriculture?', a: 'The cultivation of land and rearing of animals to meet human needs.' },
+            { q: '2. What are the two main types of agriculture on the basis of availability of land?', a: 'Intensive and extensive agriculture.' },
+            { q: '3. What is mixed farming?', a: 'The practice of growing crops and rearing animals on the same farm.' },
+            { q: '4. What is ranching?', a: 'Rearing of animals on large grasslands for commercial purposes.' },
+            { q: '5. Name the two main agricultural seasons of India.', a: 'Kharif and Rabi.' },
+            { q: '6. What are food crops? Give two examples of food crops.', a: 'Crops grown for food, such as rice and wheat.' },
+            { q: '7. Name three major rice-producing countries.', a: 'India, China, and Indonesia.' },
+        ],
+    },
+    {
+        title: 'C. Answer in not more than 40 words',
+        questions: [
+            { q: '1. What is organic farming?', a: 'Organic farming is growing crops without chemical fertilisers or pesticides, using natural manure instead.' },
+            { q: '2. Mention the factors that influence crop cultivation.', a: 'Climate, soil type, water availability, technology, and human labour.' },
+            { q: '3. Distinguish between subsistence agriculture and commercial agriculture.', a: 'Subsistence agriculture is for family needs; commercial agriculture is for sale and profit.' },
+            { q: '4. Write briefly about agriculture in Western Europe.', a: 'Western Europe has highly mechanised, scientific, and commercial farming with high productivity.' },
+            { q: '5. Name two important beverage crops. Also name the countries which are the largest producers of these crops.', a: 'Tea (India and China) and coffee (Brazil and Colombia).' },
+        ],
+    },
+    {
+        title: 'D. Answer in not more than 100 words',
+        questions: [
+            { q: '1. What is shifting agriculture? Mention one area where it is practised. What is it called in this area?', a: 'Shifting agriculture is a method in which patches of forest are cleared for cultivation, and after a few years, the land is abandoned. It is called Jhum in North-East India.' },
+            { q: '2. What do you know about plantation agriculture?', a: 'It involves growing a single crop on a large scale for commercial use, such as tea, coffee, or rubber. It requires capital, labour, and good transport.' },
+            { q: '3. Compare the conditions required for growing rice and wheat.', a: 'Rice needs high temperature, heavy rainfall, and fertile soil. Wheat needs moderate temperature, less rainfall, and well-drained loamy soil.' },
+            { q: '4. Compare the agriculture of India and the USA with reference to:', a: '(a) Type of farming: India – subsistence; USA – commercial.\n(b) Mechanisation: India – mostly manual; USA – highly mechanised.\n(c) Use of improved seeds and fertilisers: More advanced in the USA.' },
+        ],
+    },
+    {
+        title: 'E. Think and Answer',
+        questions: [
+            { q: '1. Why are plateaus and mountains not ideal for growing crops?', a: 'Because of uneven terrain, thin soil, and difficulty in irrigation.' },
+            { q: '2. Why are most Indian farms small in size?', a: 'Due to high population and division of land through generations.' },
+            { q: '3. Why is manual labour widely used in Indian farms?', a: 'Because labour is cheap and farm holdings are small.' },
+            { q: '4. What makes the use of machines a necessity in farms in the USA?', a: 'Large farm size and shortage of labour.' },
+            { q: '5. Mention one advantage that mixed farming gives to farmers.', a: 'It provides both food and income from crops and livestock.' },
+        ],
+    },
+    {
+        title: 'F. Fill in the Blanks',
+        questions: [
+            { q: '1. The growing of grapes is called ____.', a: 'viticulture' },
+            { q: '2. The slash and burn method is associated with ____ agriculture.', a: 'shifting' },
+            { q: '3. What pisciculture is to fish, dairy farming is to ____ animals.', a: 'milch' },
+            { q: '4. Crops that are grown to be sold or exported are called ____ crops.', a: 'cash' },
+            { q: '5. Rice is the staple crop of ____.', a: 'India' },
+            { q: '6. In India, the states of Maharashtra and Gujarat are leading producers of ____.', a: 'cotton' },
+            { q: '7. Food security refers to the availability of and access to ____.', a: 'food' },
+            { q: '8. Fodder crops are grown to feed farm ____.', a: 'animals' },
+        ],
+    },
+    {
+        title: 'G. True or False',
+        questions: [
+            { q: '1. Sericulture involves raising silkworms for producing silk.', a: 'True' },
+            { q: '2. Waterlogging is harmful for the cultivation of tea.', a: 'True' },
+            { q: '3. Cotton is the main crop in the Ganga basin.', a: 'False' },
+            { q: '4. Extensive agriculture is usually practised in densely populated areas.', a: 'False' },
+            { q: '5. Dairy farming is usually intensive.', a: 'True' },
+            { q: '6. In India, agriculture is mostly of the intensive subsistence type.', a: 'True' },
+            { q: '7. Wheat is a kharif crop in India.', a: 'False' },
+            { q: '8. Coffee grows well on tropical hill slopes with well-drained loamy soil.', a: 'True' },
+        ],
+    },
+    {
+        title: 'H. Choose the Correct Option',
+        questions: [
+            { q: '1. The cultivation of fruits, flowers and vegetables is called —', a: '(d) horticulture' },
+            { q: '2. Which of the following is not true for intensive agriculture?', a: '(c) large farms' },
+            { q: '3. Which of the following types of agriculture is most widely practised in South-East Asia?', a: '(a) subsistence farming' },
+            { q: '4. Which of the following is not a cash crop?', a: '(c) millets' },
+            { q: '5. Which of the following is not a type of millet?', a: '(d) mustard' },
+            { q: '6. Which of the following is a fibre crop?', a: '(b) cotton' },
+            { q: '7. Ecofriendly methods have been introduced in the USA to —', a: '(c) prevent crops from being adversely affected by chemicals' },
         ],
     },
 ];

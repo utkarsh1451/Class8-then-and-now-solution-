@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const ScrollToTopButton: React.FC = () => {
+interface ScrollToTopButtonProps {
+  playClickSound: () => void;
+}
+
+const ScrollToTopButton: React.FC<ScrollToTopButtonProps> = ({ playClickSound }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
@@ -13,6 +17,7 @@ const ScrollToTopButton: React.FC = () => {
   };
 
   const scrollToTop = () => {
+    playClickSound();
     window.scrollTo({
       top: 0,
       behavior: 'smooth',

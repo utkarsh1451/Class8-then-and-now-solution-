@@ -31,7 +31,7 @@ const ChapterPage: React.FC<ChapterPageProps> = ({ chapter, unit, content, onGoB
     <div>
       <BackButton onClick={onGoBack} />
       <div className="text-center mb-12">
-        <h1 className="text-3xl md:text-5xl font-bold mb-2">
+        <h1 className="text-4xl md:text-6xl font-bold mb-2">
           {`Chapter ${chapter.id}: ${chapter.title}`}
         </h1>
         <p className="text-gray-400">Select a section to view its content.</p>
@@ -51,7 +51,7 @@ const ChapterPage: React.FC<ChapterPageProps> = ({ chapter, unit, content, onGoB
             whileHover={{ scale: 1.02, x: 5 }}
             whileTap={{ scale: 0.98 }}
           >
-            <h2 className="text-xl font-semibold">{section.title}</h2>
+            <h2 className="text-2xl font-semibold">{section.title}</h2>
             <motion.div>
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

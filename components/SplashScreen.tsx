@@ -16,7 +16,7 @@ const SplashScreen: React.FC = () => {
         className="flex flex-col items-center gap-4"
       >
         <div className="text-6xl md:text-8xl">📘</div>
-        <h1 className="text-2xl md:text-4xl font-bold text-center tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+        <h1 className="text-4xl md:text-6xl font-bold text-center tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
           Class 8 – Then and Now
         </h1>
       </motion.div>
